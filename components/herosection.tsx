@@ -10,19 +10,19 @@ interface Slide {
 const HeroSection = () => {
     const slides: Slide[] = [
         {
-            title: "First slide label",
-            subtitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, harum",
-            imageUrl: "/images/banner_01.JPG",
+            title: "Nikmati Kelezatan Sejati",
+            subtitle: "Hidangan spesial yang dibuat dengan bumbu rahasia keluarga.",
+            imageUrl: "/images/coto_makassar.jpg",
         },
         {
-            title: "Second slide label",
-            subtitle: "Loren ipsum dolor sit amet, consectetur adipiscing elit",
-            imageUrl: "/images/banner_02.JPG",
+            title: "Suasana Nyaman & Hangat",
+            subtitle: "Tempat sempurna untuk berkumpul bersama orang tercinta.",
+            imageUrl: "/images/suasana_makan.jpg",
         },
         {
-            title: "Third slide label",
-            subtitle: "Loren ipsum dolor sit amet, consectetur adipiscing elit",
-            imageUrl: "/images/banner_03.jpg",
+            title: "Bahan Segar Berkualitas",
+            subtitle: "Kami menjamin kesegaran di setiap gigitan.",
+            imageUrl: "/images/bahan_coto.jpg",
         },
     ]
 
@@ -32,15 +32,15 @@ const HeroSection = () => {
                 <Carousel.Item key={index}>
                     <div 
                         style={{
-                            backgroundImage:`url(${slide.imageUrl})`,
+                            backgroundImage:`linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${slide.imageUrl})`,
                             backgroundSize: "cover",
                             backgroundPosition: "center",
                             height: "60vh",
                         }}>
                     </div>
                     <Carousel.Caption>
-                        <h1 className="display-4 fw-bold">{slide.title}</h1>
-                        <p className="lead">{slide.subtitle}</p>
+                        <h1 className="display-4 fw-bold text-white">{slide.title}</h1>
+                        <p className="lead text-white">{slide.subtitle}</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             )
