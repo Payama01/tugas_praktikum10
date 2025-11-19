@@ -1,6 +1,7 @@
 "use client"
-import { Container, Row, Col, Form, Button, InputGroup } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap"; // Hapus Form, Button, InputGroup jika tidak dipakai lagi
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import Link from 'next/link'; 
 
 export default function Footer() {
     return (
@@ -10,21 +11,35 @@ export default function Footer() {
                     <Col md={3} className="mb-4">
                         <h4 className="fw-bold mb-3">Menu Kami</h4>
                         <ul className="list-unstyled">
-                            <li className="mb-2"><a href="#" className="text-decoration-none text-muted">Makanan Utama</a></li>
-                            <li className="mb-2"><a href="#" className="text-decoration-none text-muted">Minuman Segar</a></li>
-                            <li className="mb-2"><a href="#" className="text-decoration-none text-muted">Dessert</a></li>
+                            <li className="mb-2">
+                                <Link href="/menu?category=makanan" className="text-decoration-none text-muted">
+                                    Makanan Utama
+                                </Link>
+                            </li>
+                            <li className="mb-2">
+                                <Link href="/menu?category=minuman" className="text-decoration-none text-muted">
+                                    Minuman Segar
+                                </Link>
+                            </li>
+                            <li className="mb-2">
+                                <Link href="/menu?category=penutup" className="text-decoration-none text-muted">
+                                    Dessert
+                                </Link>
+                            </li>
                         </ul>
                     </Col>
+                    
                     <Col md={3} className="mb-4">
                         <h4 className="fw-bold mb-3">Navigasi</h4>
                         <ul className="list-unstyled">
-                            <li className="mb-2"><a href="#" className="text-decoration-none text-muted">Beranda</a></li>
-                            <li className="mb-2"><a href="#" className="text-decoration-none text-muted">Tentang Kami</a></li>
-                            <li className="mb-2"><a href="#" className="text-decoration-none text-muted">Reservasi</a></li>
-                            <li className="mb-2"><a href="#" className="text-decoration-none text-muted">Menu</a></li>
-                            <li className="mb-2"><a href="#" className="text-decoration-none text-muted">Galeri</a></li>
+                            <li className="mb-2"><Link href="/" className="text-decoration-none text-muted">Beranda</Link></li>
+                            <li className="mb-2"><Link href="/#about" className="text-decoration-none text-muted">Tentang Kami</Link></li>
+                            <li className="mb-2"><Link href="/#contact" className="text-decoration-none text-muted">Kontak</Link></li>
+                            <li className="mb-2"><Link href="/menu" className="text-decoration-none text-muted">Menu</Link></li>
+                            <li className="mb-2"><Link href="/reservasi" className="text-decoration-none text-muted">Reservasi</Link></li>
                         </ul>
                     </Col>
+                    
                     <Col md={3} className="mb-4">
                         <h4 className="fw-bold mb-3">Jam Buka</h4>
                         <ul className="list-unstyled text-muted">
@@ -34,15 +49,21 @@ export default function Footer() {
                             <li className="mb-2">09.00 - 23.00 WIB</li>
                         </ul>
                     </Col>
+                    
                     <Col md={3} className="mb-4">
-                        <h4 className="fw-bold mb-3">Info Promo</h4>
-                        <Form className="mb-3">
-                            <InputGroup>
-                                <Form.Control type="email" placeholder="Email Anda" aria-label="Email" />
-                                <Button variant="danger">Daftar</Button>
-                            </InputGroup>
-                        </Form>
-                        <h5 className="mt-4 mb-3">Ikuti Kami</h5>
+                        <h4 className="fw-bold mb-3">Hubungi Kami</h4>
+
+                        <div className="d-flex align-items-center mb-2 text-muted">
+                            <i className="bi bi-telephone-fill me-2 text-danger"></i>
+                            <span>(021) 1234-5678</span>
+                        </div>
+                        
+                        <div className="d-flex align-items-center mb-4 text-muted">
+                            <i className="bi bi-envelope-fill me-2 text-danger"></i>
+                            <span>reservasi@payama.com</span>
+                        </div>
+
+                        <h5 className="mb-3">Ikuti Kami</h5>
                         <ul className="list-unstyled d-flex gap-3">
                             <li><a href="#" className="text-dark"><i className="bi bi-facebook fs-4"></i></a></li>
                             <li><a href="#" className="text-dark"><i className="bi bi-twitter-x fs-4"></i></a></li>
@@ -51,6 +72,7 @@ export default function Footer() {
                         </ul>
                     </Col>
                 </Row>
+                
                 <Row className="mt-4">
                     <Col md={12} className="text-center">
                         <hr className="mb-4"></hr>

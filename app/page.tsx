@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 
-// Components
 import Navbar from "../components/navbar";
 import HeroSection from "../components/herosection";
 import WorkSection from "../components/worksection";
@@ -10,7 +9,6 @@ import ServiceSection from "../components/servicesection";
 import ContactSection from "../components/contactsection";
 import Footer from "../components/footer";
 
-// Bootstrap
 import { Container } from "react-bootstrap";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -30,7 +28,7 @@ export default function Home() {
               <p>
                 Kami berkomitmen untuk menyajikan hidangan terbaik dengan bahan-bahan segar pilihan dari petani lokal. Setiap resep diracik dengan penuh semangat oleh koki berpengalaman kami untuk memberikan pengalaman kuliner yang tak terlupakan bagi Anda dan keluarga.
               </p>
-              <Button variant="info" href="/menu/page.tsx">Lihat Menu Lengkap</Button>
+              <Button variant="info" href="/menu">Lihat Menu Lengkap</Button>
             </Col>
             <Col md={6}>
               <p>

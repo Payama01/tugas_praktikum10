@@ -1,5 +1,4 @@
 'use client'
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -23,7 +22,6 @@ function WorkSection() {
                             <Card.Text>
                                 Nasi goreng kampung dengan sate ayam, telur mata sapi, dan kerupuk udang yang renyah.
                             </Card.Text>
-                            <Button variant="primary">Pesan Sekarang</Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -37,7 +35,6 @@ function WorkSection() {
                             <Card.Text>
                                 Daging sapi impor pilihan dipanggang sempurna dengan saus lada hitam khas chef kami.
                             </Card.Text>
-                            <Button variant="primary">Pesan Sekarang</Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -51,7 +48,6 @@ function WorkSection() {
                             <Card.Text>
                                 Pasta creamy dengan potongan daging asap dan taburan keju parmesan asli Italia.
                             </Card.Text>
-                            <Button variant="primary">Pesan Sekarang</Button>
                         </Card.Body>
                     </Card>
                 </Col>

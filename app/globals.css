@@ -41,16 +41,13 @@ a {
   }
 }
 
-/* For Contact Section Start */
 #contact{
   background: url(/images/map.jpg);
   background-size: cover;       
   background-repeat: no-repeat;  
   background-position: center; 
 }
-/* For Contact Section End */
 
-/* For Footer Start */
 #footer ul li a{
   color: #262626;
   font-weight: 500;
@@ -59,4 +56,3 @@ a {
 #footer ul li a:hover {
   text-decoration: underline;
 }
-/* For Footer end */
